@@ -37,6 +37,7 @@ body{
 @media only screen and (max-width: 600px){
     .my-custom{
         margin-top: 28%;
+        margin-bottom: 30%;
     }
 }
 
