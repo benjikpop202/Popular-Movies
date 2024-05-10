@@ -34,7 +34,6 @@ let getMovies = async ()=> {
             const Datos = await respuesta.json()
             let peliculas = ''
             Datos.results.forEach(pelicula => {
-                console.log(pelicula);
                 peliculas = peliculas +  `
                 <div class="card m-3 custom-bg" style="width: 18rem;">
                 <img src="https://image.tmdb.org/t/p/w300/${pelicula.poster_path}" class="card-img-top " alt="peli">
