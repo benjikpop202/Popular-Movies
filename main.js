@@ -17,7 +17,6 @@ anterior.addEventListener("click",()=>{
     }
 })
 
-// Función para realizar una solicitud GET a la API de The Movie DB
 let getMovies = async ()=> {
     try{
         const respuesta = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=es-MX&page=${pagina}`)
