@@ -5,15 +5,24 @@ let pagina = 1
 const anterior = document.getElementById("anterior")
 const siguiente = document.getElementById("siguiente")
 
+function scrollToTop() {
+    if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+        document.body.scrollTop = 0; 
+        document.documentElement.scrollTop = 0; 
+    }
+}
+
 siguiente.addEventListener("click", ()=>{
  pagina = pagina+1
  getMovies()
+ scrollToTop()
 })
 
 anterior.addEventListener("click",()=>{
     if(pagina > 1){
         pagina = pagina-1
         getMovies()
+        scrollToTop()
     }
 })
 

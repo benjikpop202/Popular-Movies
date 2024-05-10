@@ -29,3 +29,9 @@ body{
     margin-bottom: 15%;
 }
 
+@media only screen and (max-width: 600px){
+    .my-custom{
+        margin-top: 28%;
+    }
+}
+
