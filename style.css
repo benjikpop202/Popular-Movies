@@ -29,6 +29,11 @@ body{
     margin-bottom: 15%;
 }
 
+.card.img-top{
+    width: 100%;
+    height: auto;
+}
+
 @media only screen and (max-width: 600px){
     .my-custom{
         margin-top: 28%;

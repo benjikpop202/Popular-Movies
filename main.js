@@ -34,11 +34,13 @@ let getMovies = async ()=> {
             const Datos = await respuesta.json()
             let peliculas = ''
             Datos.results.forEach(pelicula => {
+                console.log(pelicula);
                 peliculas = peliculas +  `
                 <div class="card m-3 custom-bg" style="width: 18rem;">
-                <img src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" class="card-img-top " alt="peli">
+                <img src="https://image.tmdb.org/t/p/w300/${pelicula.poster_path}" class="card-img-top " alt="peli">
                 <div class="card-body">
                 <h5 class="card-title text-white">${pelicula.title}</h5>
+                <p class="card-text text-white">popularidad: ${pelicula.popularity}<br> release: ${pelicula.release_date}</p>
                </div>
                </div> `
             });
